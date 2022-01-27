@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import FetchImages from "./components/GalaxyView/FetchImages/FetchImages";
+import "../node_modules/react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1 className="title">
+          Milky Way Gallery<div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+          <div className="star"></div>
+        </h1>
+        <FetchImages />
+      </div>
     </div>
   );
 }
